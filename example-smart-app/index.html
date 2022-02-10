@@ -30,7 +30,7 @@
                     function(pt) {
                       debugger;
                         document.getElementById("patient").innerText = JSON.stringify(pt, null, 4);
-                        document.getElementById("sitframe").src ="https://heal-27-28-sit-5140.paymentus.io/rotp/abc?header.accountNumber=123455&header.authToken1=" + pt.name[1].family + "&header.authToken2=lname&header.authToken3=08/05/1983";
+                        document.getElementById("sitframe").src ="https://heal-27-28-sit-5140.paymentus.io/rotp/abc?iframe=yes&header.accountNumber=123455&header.authToken1=" + pt.name[1].family + "&header.authToken2=lname&header.authToken3=08/05/1983";
                     },
                     function(error) {
                         document.getElementById("patient").innerText = error.stack;
