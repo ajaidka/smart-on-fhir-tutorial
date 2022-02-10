@@ -30,11 +30,11 @@
                     function(pt) {
                       debugger;
                         document.getElementById("patient").innerText = JSON.stringify(pt, null, 4);
-                        document.getElementById("sitframe").src = "https://heal-27-28-sit-5140.paymentus.io/rotp/abc?
-                            iframe=yes&header.accountNumber=123455
-                            &header.authToken1=" + pt.name[0].family + "
-                            &header.authToken2=" + pt.name[0].given + "
-                            &header.authToken3=" + pt.birthDate;
+                        document.getElementById("sitframe").src = "https://heal-27-28-sit-5140.paymentus.io/rotp/abc?" 
+                            + "iframe=yes&header.accountNumber=123455"
+                            + "&header.authToken1=" + pt.name[0].family 
+                            + "&header.authToken2=" + pt.name[0].given 
+                            + "&header.authToken3=" + pt.birthDate;
                     },
                     function(error) {
                         document.getElementById("patient").innerText = error.stack;
